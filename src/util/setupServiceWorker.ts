@@ -85,9 +85,9 @@ if (IS_SERVICE_WORKER_SUPPORTED) {
           console.error('[SW] ServiceWorker not available');
         }
 
-        if (!IS_IOS && !IS_ANDROID && !IS_TEST) {
-          getActions().showDialog?.({ data: { message: 'SERVICE_WORKER_DISABLED', hasErrorKey: true } });
-        }
+        // if (!IS_IOS && !IS_ANDROID && !IS_TEST) {
+        //   getActions().showDialog?.({ data: { message: 'SERVICE_WORKER_DISABLED', hasErrorKey: true } });
+        // }
       }
     } catch (err) {
       if (DEBUG) {
